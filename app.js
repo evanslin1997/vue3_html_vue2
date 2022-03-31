@@ -1,4 +1,5 @@
-Vue.createApp({
+var vue = new Vue({
+    el: "#myapp",
     data() {
         return {
             plans: [],
@@ -11,4 +12,18 @@ Vue.createApp({
             this.value = ''
         }
     }
-}).mount('#myapp')
+})
+// Vue.createApp({
+//     data() {
+//         return {
+//             plans: [],
+//             value: ''
+//         }
+//     },
+//     methods: {
+//         addPlan() {
+//             this.plans.push(this.value)
+//             this.value = ''
+//         }
+//     }
+// }).mount('#myapp')
